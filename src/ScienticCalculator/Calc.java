@@ -27,21 +27,402 @@ public class Calc extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jbback = new javax.swing.JButton();
+        jbroot = new javax.swing.JButton();
+        jbadd = new javax.swing.JButton();
+        jb7 = new javax.swing.JButton();
+        jb8 = new javax.swing.JButton();
+        jb9 = new javax.swing.JButton();
+        jbsub = new javax.swing.JButton();
+        jb4 = new javax.swing.JButton();
+        jb5 = new javax.swing.JButton();
+        jb6 = new javax.swing.JButton();
+        jbmult = new javax.swing.JButton();
+        jbpoint = new javax.swing.JButton();
+        jb0 = new javax.swing.JButton();
+        jbpm = new javax.swing.JButton();
+        jb3 = new javax.swing.JButton();
+        jbequ = new javax.swing.JButton();
+        jb2 = new javax.swing.JButton();
+        jb1 = new javax.swing.JButton();
+        jbdiv = new javax.swing.JButton();
+        jTextField1 = new javax.swing.JTextField();
+        jbclear = new javax.swing.JButton();
+        jblog = new javax.swing.JButton();
+        jbsin = new javax.swing.JButton();
+        jbsinh = new javax.swing.JButton();
+        jbpi = new javax.swing.JButton();
+        jbcos = new javax.swing.JButton();
+        jbcosh = new javax.swing.JButton();
+        jbpow = new javax.swing.JButton();
+        jbtan = new javax.swing.JButton();
+        jbtanh = new javax.swing.JButton();
+        jbsqr = new javax.swing.JButton();
+        jbhex = new javax.swing.JButton();
+        jbbin = new javax.swing.JButton();
+        jbcube = new javax.swing.JButton();
+        jbcbr = new javax.swing.JButton();
+        jbrund = new javax.swing.JButton();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        jMenu1 = new javax.swing.JMenu();
+        jMenu2 = new javax.swing.JMenu();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jbback.setText("B");
+
+        jbroot.setText("<HTML><BODY><P>&#x221a</P></BODY></HTML>");
+        jbroot.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbrootActionPerformed(evt);
+            }
+        });
+
+        jbadd.setText("+");
+
+        jb7.setText("7");
+
+        jb8.setText("8");
+
+        jb9.setText("9");
+        jb9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jb9ActionPerformed(evt);
+            }
+        });
+
+        jbsub.setText("-");
+
+        jb4.setText("4");
+
+        jb5.setText("5");
+
+        jb6.setText("6");
+
+        jbmult.setText("*");
+
+        jbpoint.setText(".");
+
+        jb0.setText("0");
+
+        jbpm.setText("<HTML><BODY><P>&#x00B1</P></BODY></HTML>");
+        jbpm.setActionCommand("<HTML> <HEAD></HEAD><BODY>&#x00B1</BODY></HTML>");
+
+        jb3.setText("3");
+        jb3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jb3ActionPerformed(evt);
+            }
+        });
+
+        jbequ.setText("=");
+
+        jb2.setText("2");
+
+        jb1.setText("1");
+
+        jbdiv.setText("/");
+
+        jTextField1.setFont(new java.awt.Font("Tahoma", 0, 22)); // NOI18N
+        jTextField1.setHorizontalAlignment(javax.swing.JTextField.TRAILING);
+        jTextField1.setText("0");
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+
+        jbclear.setText("C");
+
+        jblog.setText("log");
+
+        jbsin.setText("sin");
+        jbsin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbsinActionPerformed(evt);
+            }
+        });
+
+        jbsinh.setText("sinh");
+
+        jbpi.setText("<HTML><BODY><P>&Pi</P></BODY><HTML>");
+
+        jbcos.setText("cos");
+        jbcos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbcosActionPerformed(evt);
+            }
+        });
+
+        jbcosh.setText("cosh");
+
+        jbpow.setText("<HTML><BODY><P>x<sup>y</sup></P></BODY></HTML>");
+
+        jbtan.setText("tan");
+        jbtan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbtanActionPerformed(evt);
+            }
+        });
+
+        jbtanh.setText("tanh");
+        jbtanh.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbtanhActionPerformed(evt);
+            }
+        });
+
+        jbsqr.setText("<HTML><BODY><P>x<sup>2</sup></P></BODY></HTML>");
+        jbsqr.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbsqrActionPerformed(evt);
+            }
+        });
+
+        jbhex.setText("Hex");
+        jbhex.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbhexActionPerformed(evt);
+            }
+        });
+
+        jbbin.setText("Bin");
+        jbbin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbbinActionPerformed(evt);
+            }
+        });
+
+        jbcube.setText("<HTML><BODY><P>x<sup>3</sup></P></BODY></HTML>");
+
+        jbcbr.setText("Cbr");
+        jbcbr.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbcbrActionPerformed(evt);
+            }
+        });
+
+        jbrund.setText("Rund");
+        jbrund.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbrundActionPerformed(evt);
+            }
+        });
+
+        jMenu1.setText("File");
+        jMenuBar1.add(jMenu1);
+
+        jMenu2.setText("Edit");
+        jMenuBar1.add(jMenu2);
+
+        setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jTextField1)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jbback, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jbclear, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jbroot, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jbadd, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jb7, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jb8, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jb9, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jbsub, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jb4, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jb5, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jb6, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jbmult, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(84, 84, 84)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jbpow, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jbtan, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jbtanh, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jbpi, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jbcos, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jbcosh, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jblog, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jbsin, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jbsinh, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jb3, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jb2, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jb1, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jbdiv, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jbpoint, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jb0, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jbpm, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jbequ, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jbcube, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jbcbr, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jbrund, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jbsqr, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jbhex, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jbbin, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                        .addGap(0, 15, Short.MAX_VALUE)))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(36, 36, 36)
+                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jbback, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jbroot, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jbadd, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jbclear, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jbsin, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jblog, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jbsinh, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jbpi, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jb7, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jb8, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jb9, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jbsub, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jbcos, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jbcosh, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jbtanh, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jb4, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jb5, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jb6, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jbmult, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(jbtan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jbpow, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jb3, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jb2, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jb1, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jbdiv, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jbhex, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jbbin, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jbsqr))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jbcube)
+                    .addComponent(jbcbr, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jbpoint, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jb0, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jbpm, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jbequ, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(jbrund, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jbsinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbsinActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jbsinActionPerformed
+
+    private void jbcosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbcosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jbcosActionPerformed
+
+    private void jbtanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtanActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jbtanActionPerformed
+
+    private void jbtanhActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtanhActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jbtanhActionPerformed
+
+    private void jbhexActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbhexActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jbhexActionPerformed
+
+    private void jbbinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbbinActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jbbinActionPerformed
+
+    private void jbcbrActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbcbrActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jbcbrActionPerformed
+
+    private void jbrundActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbrundActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jbrundActionPerformed
+
+    private void jb9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jb9ActionPerformed
+
+    private void jbrootActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbrootActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jbrootActionPerformed
+
+    private void jbsqrActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbsqrActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jbsqrActionPerformed
+
+    private void jb3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jb3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -79,5 +460,44 @@ public class Calc extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JButton jb0;
+    private javax.swing.JButton jb1;
+    private javax.swing.JButton jb2;
+    private javax.swing.JButton jb3;
+    private javax.swing.JButton jb4;
+    private javax.swing.JButton jb5;
+    private javax.swing.JButton jb6;
+    private javax.swing.JButton jb7;
+    private javax.swing.JButton jb8;
+    private javax.swing.JButton jb9;
+    private javax.swing.JButton jbadd;
+    private javax.swing.JButton jbback;
+    private javax.swing.JButton jbbin;
+    private javax.swing.JButton jbcbr;
+    private javax.swing.JButton jbclear;
+    private javax.swing.JButton jbcos;
+    private javax.swing.JButton jbcosh;
+    private javax.swing.JButton jbcube;
+    private javax.swing.JButton jbdiv;
+    private javax.swing.JButton jbequ;
+    private javax.swing.JButton jbhex;
+    private javax.swing.JButton jblog;
+    private javax.swing.JButton jbmult;
+    private javax.swing.JButton jbpi;
+    private javax.swing.JButton jbpm;
+    private javax.swing.JButton jbpoint;
+    private javax.swing.JButton jbpow;
+    private javax.swing.JButton jbroot;
+    private javax.swing.JButton jbrund;
+    private javax.swing.JButton jbsin;
+    private javax.swing.JButton jbsinh;
+    private javax.swing.JButton jbsqr;
+    private javax.swing.JButton jbsub;
+    private javax.swing.JButton jbtan;
+    private javax.swing.JButton jbtanh;
     // End of variables declaration//GEN-END:variables
 }
